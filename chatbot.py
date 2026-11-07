@@ -25,7 +25,7 @@ for message in st.session_state.chat_history:
         st.markdown(message["content"])
 
 #llm initiate
-groq_aki_key=st.secrets['GROQ_API_KEY']
+groq_aki_key=st.secrets["GROQ_API_KEY"]
 llm=ChatGroq(
     groq_api_key=groq_api_key,
     model="openai/gpt-oss-20b",
